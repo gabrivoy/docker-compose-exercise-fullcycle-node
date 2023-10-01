@@ -31,7 +31,7 @@ app.get('/', (req, res) => {
         html += '<h2>MySQL Database Values:</h2>'
         html += '<ul>';
         result.forEach(element => {
-            html += `<li><h2>${element.name}</h2></li>`;
+            html += `<li><h2>${element.id}, ${element.name}</h2></li>`;
         });
         html += '</ul>';
         res.send(html);
