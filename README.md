@@ -6,7 +6,7 @@ The exercise instructions are as follows:
 
 ---
 
-### Docker Compose Exercise
+### Docker compose challenge
 
 In this challenge, we'll use Nginx as a reverse proxy. The main idea is that when a user accesses Nginx, it will make a call to our Node.js application. This application, in turn, will add a record to our MySQL database, registering a name in the "people" table.
 
@@ -23,7 +23,7 @@ The programming language for this challenge is Node/JavaScript.
 
 ---
 
-### Some notes on the challenge
+### Some notes on this challenge
 
 For the setup of the database inside the `db` container, we could run the following commands to create the table we're using:
 
@@ -37,3 +37,11 @@ mysql >> desc people;
 ```
 
 Although this solution was taught on the course and videos, I've found that it would not properly match the specifications on the challenge. So, I've found a way to create the table automatically, so the service would be ready to use as soon as the containers are up and running, without the need to manually create the table. This was possible by creating the `init.sql` file inside the `db` container, which is automatically executed by the MySQL service when the container is created.
+
+---
+
+### Signed commit challenge
+
+This repository will also be used for a GitHub section challenge, also from the FullCycle course.
+
+The exercise consists on signing and pushing a commit to this repository using a GPG key. The key used for this challenge is the same one used for signing my last commit on this challenge.
